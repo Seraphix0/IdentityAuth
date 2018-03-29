@@ -28,5 +28,36 @@ namespace IdentityAuth.Models.AccountViewModels
         [Required]
         [Display(Name = "Salutation")]
         public string Salutation { get; set; }
+
+        [Required]
+        [Display(Name = "FirstName")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "LastName")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Gender")]
+        public bool Gender { get; set; }
+
+        [Required]
+        [DataType(DataType.Date)]
+        [Display(Name = "Birth")]
+        public DateTime Birth { get; set; }
+
+        [Required]
+        [DataType(DataType.DateTime)]
+        [Display(Name = "JoinDate")]
+        public bool JoinDate { get; set; }
+
+        [Required]
+        [DataType(DataType.Currency)]
+        [Display(Name = "JoinDate")]
+        public int HourPay { get; set; }
+
+        [Required]
+        [Display(Name = "FreeTime")]
+        public int FreeTime { get; set; }
     }
 }
